@@ -106,6 +106,21 @@
         border-bottom: 1px dotted #888;
         cursor: help;
       }
+      code {
+        background: #ddd;
+        font-family: "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+        padding: 4px 8px;
+      }
+      pre {
+        background: #ddd;
+        border: 1px dashed #aaa;
+        overflow: auto;
+        padding: 1px;
+        margin-bottom: 1em;
+      }
+      code.bash:before {
+        content: "$ ";
+      }
     </style>
     <script type="text/javascript">
 
@@ -133,9 +148,22 @@
         </a>
       </li>
     </ul>
-    <!-- <h2>Ruby</h2>
+    <h2>Ruby</h2>
     <ul class="software">
       <li>
+        <a class="big" href="http://github.com/kerrick/google/">
+          <h3>google</h3>
+          <p>A ruby gem to give you the power of Google Search in your command line.</p>
+          <pre><code class="bash">gem install google</code></pre>
+          <h4>Technologies</h4>
+          <ul>
+            <li>Ruby</li>
+            <li>Unix CLI</li>
+            <li>Google Web Search API</li>
+          </ul>
+        </a>
+      </li>
+      <!-- <li>
         <a class="big" href="http://github.com/kerrick/project-euler-ruby/">
           <h3>Project Euler Solutions</h3>
           <p>Solutions to Project Euler problems.</p>
@@ -154,9 +182,9 @@
             <li>Ruby</li>
           </ul>
         </a>
-      </li>
+      </li> -->
     </ul>
-    <h2>Rails</h2> -->
+    <!-- <h2>Rails</h2> -->
     <h2>Contributions to Other Projects</h2>
     <ul class="software">
       <li>
