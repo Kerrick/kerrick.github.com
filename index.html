@@ -121,6 +121,9 @@
       code.bash:before {
         content: "$ ";
       }
+      pre code {
+        display: block;
+      }
     </style>
     <script type="text/javascript">
 
@@ -154,7 +157,7 @@
         <a class="big" href="http://github.com/kerrick/google/">
           <h3>google</h3>
           <p>A ruby gem to give you the power of Google Search in your command line.</p>
-          <pre><code class="bash">gem install google</code></pre>
+          <pre><code class="bash">gem install google</code><code class="bash">google "hello world"</code></pre>
           <h4>Technologies</h4>
           <ul>
             <li>Ruby</li>
