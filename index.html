@@ -8,31 +8,36 @@
     </style>
     <style type="text/css">
       body {
-        background: white;
-        width: 720px;
+        background: #2E5991;
+        width: 680px;
         margin: 0 auto;
         padding: 1em 0;
-        font: 16px / 24px Arial, "Helvetica Neue", Helvetica, sans-serif;
-        color: #444;
+        font: 12px / 16px "DejaVu Sans Mono", "Menlo", "Bitstream Vera Sans Mono", monospace;
+        color: #f6f3e8;
       }
       hgroup {
-        color: #888;
+        color: #f6f3e8;
       }
       h1 {
-        font: bold 64px / 72px Arial, "Helvetica Neue", Helvetica, sans-serif;
-        color: #444;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 64px;
+        letter-spacing: -3px;
+        color: #ffffb6;
       }
       h1 a {
-        color: #444;
+        color: #ffffb6;
         text-decoration: none;
       }
       h1 a:hover {
         text-decoration: underline;
       }
       h2 {
-        font: bold 32px / 48px Arial, "Helvetica Neue", Helvetica, sans-serif;
-        color: #888;
-        border-bottom: 4px solid #888;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 48px;
+        color: #000;
+        border-bottom: 4px solid #000;
       }
       p {
         margin-bottom: 1em;
@@ -47,35 +52,13 @@
       .software > li {
         float: left;
         width: 298px;
-        margin: 1em 20px;
+        margin: 10px;
         padding: 0 9px 12px;
-        border: 1px solid #fafafa;
-        -webkit-border-radius: 5px;
-           -moz-border-radius: 5px;
-             -o-border-radius: 5px;
-                border-radius: 5px;
-        -webkit-box-shadow: 0px 2px 8px #ccc;
-           -moz-box-shadow: 0px 2px 8px #ccc;
-             -o-box-shadow: 0px 2px 8px #ccc;
-                box-shadow: 0px 2px 8px #ccc;
-        background: #ffffff;
-        background: -moz-linear-gradient(top,  #ffffff 0%, #f8f8f8 100%);
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f8f8f8));
-        background: -webkit-linear-gradient(top,  #ffffff 0%,#f8f8f8 100%);
-        background: -o-linear-gradient(top,  #ffffff 0%,#f8f8f8 100%);
-        background: -ms-linear-gradient(top,  #ffffff 0%,#f8f8f8 100%);
-        background: linear-gradient(top,  #ffffff 0%,#f8f8f8 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f8f8f8',GradientType=0 );
+        border: 1px solid #000;
+        background: #4e4e4e;
       }
       .software > li:hover {
-        background: #ffffff;
-        background: -moz-linear-gradient(top,  #fcfcfc 0%, #f4f4f4 100%);
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#f4f4f4));
-        background: -webkit-linear-gradient(top,  #fcfcfc 0%,#f4f4f4 100%);
-        background: -o-linear-gradient(top,  #fcfcfc 0%,#f4f4f4 100%);
-        background: -ms-linear-gradient(top,  #fcfcfc 0%,#f4f4f4 100%);
-        background: linear-gradient(top,  #fcfcfc 0%,#f4f4f4 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f8f8f8',GradientType=0 );
+        background: #4c4c4c;
       }
       .software a {
         display: block;
@@ -85,44 +68,67 @@
         margin: 0 -9px -14px;
       }
       h3 {
-        font: bold 24px / 48px Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font: bold 16px / 32px Arial, "Helvetica Neue", Helvetica, sans-serif;
         text-align: center;
+        color: #96cbfe;
+        background: #000;
+        margin: 0 -9px 8px;
       }
       h4 {
-        font: bold 20px / 24px Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        color: #ffffb6;
       }
       a.big {
         text-decoration: none;
-        color: #444;
+        color: #f6f3e8;
       }
       img[height="200"] {
         margin-bottom: 16px;
       }
       .software li li {
-        list-style: disc outside;
-        margin-left: 1em;
+        list-style: none;
+        margin-left: 0.5em;
+        color: #ffffb6;
+        font: 12px / 16px "DejaVu Sans Mono", "Menlo", "Bitstream Vera Sans Mono", monospace;
+      }
+      .software li li:before {
+        content: "- ";
+      }
+      p {
+         font: 14px / 16px Arial, "Helvetica Neue", Helvetica, sans-serif;
       }
       abbr {
         border-bottom: 1px dotted #888;
         cursor: help;
+        color: #e9c062;
       }
       code {
-        background: #ddd;
-        font-family: "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+        background: #000;
+        font-family: "DejaVu Sans Mono", "Menlo", "Bitstream Vera Sans Mono", monospace;
         padding: 4px 8px;
       }
       pre {
-        background: #ddd;
-        border: 1px dashed #aaa;
+        background: #000;
+        border: 1px dashed #7c7c7c;
         overflow: auto;
         padding: 1px;
         margin-bottom: 1em;
+        color: #ffd2a7;
       }
       code.bash:before {
         content: "$ ";
       }
       pre code {
         display: block;
+      }
+      em {
+        color: #a8ff60;
+        font: normal normal 12px / 16px "DejaVu Sans Mono", "Menlo", "Bitstream Vera Sans Mono", monospace;
+      }
+      .notice {
+        font: 12px / 16px "DejaVu Sans Mono", "Menlo", "Bitstream Vera Sans Mono", monospace;
       }
     </style>
     <script type="text/javascript">
@@ -131,7 +137,7 @@
   </head>
   <body>
     <hgroup>
-      <p>The open source stuff of...</p>
+      <span class="intro">The open source stuff of...</span>
       <h1><a href="http://github.com/Kerrick" title="View Kerrick's GitHub Profile">Kerrick Long</a></h1>
     </hgroup>
     <h2>JavaScript</h2>
@@ -144,9 +150,21 @@
           <h4>Technologies</h4>
           <ul>
             <li>JavaScript</li>
-            <li>Google Chrome API</l1>
+            <li>Chrome Extension API</l1>
             <li><abbr title="internationalization">i18n</abbr></li>
-            <li>Chrome Web Store</li>
+          </ul>
+        </a>
+      </li>
+      <li>
+        <a class="big" href="https://chrome.google.com/webstore/detail/apopkdkjmbfhmmohkhcbcnfipaiilkjb">
+          <h3>SteamPowered [aNTP]</h3>
+          <img src="images/steampowered.png" width="300" height="200" alt="SteamPowered">
+          <p>This is a widget for Awesome New Tab Page with Random Steam Game functionality.</p>
+          <h4>Technologies</h4>
+          <ul>
+            <li>JavaScript</li>
+            <li>Steam Community API</l1>
+            <li><abbr title="Awesome New Tab Page">aNTP</abbr> API</li>
           </ul>
         </a>
       </li>
@@ -166,28 +184,7 @@
           </ul>
         </a>
       </li>
-      <!-- <li>
-        <a class="big" href="http://github.com/kerrick/project-euler-ruby/">
-          <h3>Project Euler Solutions</h3>
-          <p>Solutions to Project Euler problems.</p>
-          <h4>Technologies</h4>
-          <ul>
-            <li>Ruby</li>
-          </ul>
-        </a>
-      </li>
-      <li>
-        <a class="big" href="https://github.com/Kerrick/ruby-koans">
-          <h3>Ruby Koans Solutions</h3>
-          <p>Solutions the Ruby Koans.</p>
-          <h4>Technologies</h4>
-          <ul>
-            <li>Ruby</li>
-          </ul>
-        </a>
-      </li> -->
     </ul>
-    <!-- <h2>Rails</h2> -->
     <h2>Contributions to Other Projects</h2>
     <ul class="software">
       <li>
@@ -197,7 +194,7 @@
           <p>Wrote detailed documentation for a large part of the reddit API by inspecting network traffic. <em>Earned an Open Sorcerer Trophy!</em></p>
           <h4>Technologies</h4>
           <ul>
-            <li>Third-party APIs</li>
+            <li>Reddit API</li>
             <li>Webkit Network Inspector</li>
           </ul>
         </a>
@@ -205,8 +202,7 @@
       <li>
         <a class="big" href="https://github.com/kerrick/giving.github.com">
           <h3>Giving.Code</h3>
-          <img src="images/giving-code.gif" width="300" height="115" alt="Hello world, how can I help?">
-          <p>Recreated website for the project.</p>
+          <p>Recreated website for the project from the ground up, including new microcopy.</p>
           <h4>Technologies</h4>
           <ul>
             <li>Twitter Bootstrap</li>
@@ -218,16 +214,26 @@
       <li>
         <a class="big" href="https://github.com/frankkohlhepp/fancy-settings/pull/7">
           <h3>Fancy Settings</h3>
-          <p>Added support to Fancy Settings for additional form elements.</p>
+          <p>Added support for additional form elements.</p>
           <h4>Technologies</h4>
           <ul>
             <li>JavaScript</li>
           </ul>
         </a>
       </li>
+      <li>
+        <a class="big" href="https://github.com/xijo/reverse_markdown/pull/1">
+          <h3>Reverse Markdown</h3>
+          <p>Added support for more HTML elements for markdown conversion.</p>
+          <h4>Technologies</h4>
+          <ul>
+            <li>Ruby</li>
+          </ul>
+        </a>
+      </li>
     </ul>
     <h2>Proprietary Stuff</h2>
-    <p><em>Yeah, I know... This isn&rsquo;t open source.</em></p>
+    <em class="notice">Yeah, I know... This isn&rsquo;t open source.</em>
     <ul class="software">
       <li>
         <a class="big" href="http://www.semo.edu/">
@@ -253,7 +259,6 @@
             <li>HTML5</li>
             <li>JavaScript</li>
             <li>Regular Expressions</li>
-            <li>Chrome Web Store</li>
           </ul>
         </a>
       </li>
