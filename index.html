@@ -25,9 +25,12 @@
         letter-spacing: -3px;
         color: #ffffb6;
       }
-      h1 a {
+      hgroup a {
         color: #ffffb6;
         text-decoration: none;
+      }
+      hgroup .contact {
+        display: none;
       }
       h1 a:hover {
         text-decoration: underline;
@@ -130,6 +133,37 @@
       .notice {
         font: 12px / 16px "DejaVu Sans Mono", "Menlo", "Bitstream Vera Sans Mono", monospace;
       }
+      @media print {
+        body, h4, .software li li, a.big {
+          color: #444 !important;
+        }
+        hgroup a, h2, h3, em {
+          color: #000 !important;
+        }
+        body {
+          width: 1020px;
+        }
+        hgroup .contact {
+          display: block;
+        }
+        .software, .software > li {
+          page-break-inside: avoid;
+          page-break-before: avoid;
+        }
+        h2 {
+          page-break-after: avoid;
+        }
+        h3 {
+          background: none;
+          border-bottom: 1px solid #000;
+        }
+        a.big:after {
+          display: block;
+          margin-top: 1em;
+          word-wrap: break-word;
+          content: attr(href);
+        }
+      }
     </style>
     <script type="text/javascript">
 
@@ -139,6 +173,7 @@
     <hgroup>
       <span class="intro">The open source stuff of...</span>
       <h1><a href="http://github.com/Kerrick" title="View Kerrick's GitHub Profile">Kerrick Long</a></h1>
+      <p class="contact"><a href="mailto:me@kerricklong.com">me@kerricklong.com</a> &bull; <a href="tel:5732006339">(573) 200-6339</a> &bull; <a href="http://github.com/kerrick">http://github.com/kerrick</a></p>
     </hgroup>
     <h2>JavaScript</h2>
     <ul class="software">
@@ -200,7 +235,7 @@
         </a>
       </li>
       <li>
-        <a class="big" href="https://github.com/kerrick/giving.github.com">
+        <a class="big" href="http://giving.github.com/">
           <h3>Giving.Code</h3>
           <p>Recreated website for the project from the ground up, including new microcopy.</p>
           <h4>Technologies</h4>
