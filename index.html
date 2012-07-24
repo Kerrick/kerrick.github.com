@@ -10,10 +10,16 @@
       body {
         background: #2E5991;
         width: 680px;
+        position: relative;
         margin: 0 auto;
         padding: 1em 0;
         font: 12px / 16px "DejaVu Sans Mono", "Menlo", "Bitstream Vera Sans Mono", monospace;
         color: #f6f3e8;
+      }
+      .coderwall {
+        position: absolute;
+        top: 0;
+        left: -200px;
       }
       hgroup {
         color: #f6f3e8;
@@ -168,6 +174,10 @@
     <script type="text/javascript">
 
     </script>
+    <!-- Coderwall -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <link href="http://coderwall.com/stylesheets/jquery.coderwall.css" media="all" rel="stylesheet" type="text/css">
+    <script src="http://coderwall.com/javascripts/jquery.coderwall.js"></script>
   </head>
   <body>
     <hgroup>
@@ -175,6 +185,7 @@
       <h1><a href="http://github.com/Kerrick" title="View Kerrick's GitHub Profile">Kerrick Long</a></h1>
       <p class="contact"><a href="mailto:me@kerricklong.com">me@kerricklong.com</a> &bull; <a href="tel:5732006339">(573) 200-6339</a> &bull; <a href="http://github.com/kerrick">http://github.com/kerrick</a></p>
     </hgroup>
+    <section class="coderwall" data-coderwall-username="kerrick" data-coderwall-orientation="vertical"></section>
     <h2>JavaScript</h2>
     <ul class="software">
       <li>
